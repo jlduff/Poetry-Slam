@@ -6,6 +6,8 @@ def get_file_lines(filename):
     in_file.close()
     return lines 
 
+print(get_file_lines("poem.txt"))
+
 def lines_printed_backwards(lines_list): 
     lines_list.reverse()
     lines_length = len (lines_list)
@@ -14,4 +16,13 @@ def lines_printed_backwards(lines_list):
         line_num = lines_length - i 
         print(f"{line_num}{line}")
 
+# The above function will print the lines of the poem.txt file in 
+# backwards order
+
+def lines_printed_random(lines_list):
+    for lines in lines_list:
+        print(choice(lines_list))
+
+# The lines_printed_random function creates a random-ordered print
+# out of the same lines list 
 
