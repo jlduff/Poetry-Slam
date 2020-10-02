@@ -35,3 +35,12 @@ def lines_printed_custom(lines_list):
 
 # The above function prints every tenth line of the poem.txt file 
 
+lines_list = get_file_lines('poem.txt')
+poem_lines = get_file_lines('poem.txt')
+
+lines_printed_backwards(lines_list)
+lines_printed_custom(lines_list)
+lines_printed_random(poem_lines)
+
+# Finally, the functions are called to run the program, each indvidually 
+# for the purposes of the video :)
