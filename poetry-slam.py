@@ -26,3 +26,12 @@ def lines_printed_random(lines_list):
 # The lines_printed_random function creates a random-ordered print
 # out of the same lines list 
 
+def lines_printed_custom(lines_list):
+    lines_length = len(lines_list)
+
+    for i in range(len(lines_list)):
+        if i % 10 == 0:
+            print(lines_list[i])
+
+# The above function prints every tenth line of the poem.txt file 
+
